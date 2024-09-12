@@ -11,7 +11,7 @@ const routes = require('./routes/auth');
 
 
 app.use(cors({
-    origin: ['http://localhost:3000'], // Adjust this as needed
+    origin: ['https://invoice-remainder.vercel.app/'], // Adjust this as needed
     credentials: true  // Allow credentials such as cookies
   }));
   
