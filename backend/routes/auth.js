@@ -12,14 +12,14 @@ router.get('/google/callback', (req, res, next) => {
       return next(err);
     }
     if (!user) {
-      return res.redirect('http://localhost:3000/');
+      return res.redirect('https://invoice-remainder.vercel.app/');
     }
 
     req.logIn(user, (err) => {
       if (err) {
         return next(err);
       }
-      return res.redirect('http://localhost:3000/form');
+      return res.redirect('https://invoice-remainder.vercel.app/form');
     });
   })(req, res, next);
 });

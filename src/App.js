@@ -6,7 +6,7 @@ import { Route, Routes } from 'react-router-dom';
 
 const App = () => {
   const handleLogin = () => {
-    window.location.href = 'http://localhost:5000/auth/google';
+    window.location.href = 'https://invoice-remainder.onrender.com/auth/google';
   };
 
   return (
